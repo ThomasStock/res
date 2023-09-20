@@ -11,4 +11,14 @@ export default defineConfig({
       },
     }),
   ],
+
+  build: {
+    lib: {
+      // Could also be a dictionary or array of multiple entry points
+      entry: resolve(__dirname, "src/main.ts"),
+      name: "Main",
+      // the proper extensions will be added
+      fileName: "main-lib",
+    },
+  },
 });
