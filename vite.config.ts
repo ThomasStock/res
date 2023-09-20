@@ -15,16 +15,16 @@ export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
-      entry: resolve(__dirname, "lib/self.js"),
+      entry: resolve(__dirname, "src/self.ts"),
       name: "Self",
       // the proper extensions will be added
       fileName: "self-lib",
     },
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-        self: resolve(__dirname, "self.html"),
-      },
-    },
+    // rollupOptions: {
+    //   input: {
+    //     // main: resolve(__dirname, "index.html"),
+    //     self: resolve(__dirname, "self.html"),
+    //   },
+    // },
   },
 });
