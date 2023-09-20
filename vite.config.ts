@@ -11,7 +11,15 @@ export default defineConfig({
       },
     }),
   ],
+
   build: {
+    lib: {
+      // Could also be a dictionary or array of multiple entry points
+      entry: resolve(__dirname, "lib/self.js"),
+      name: "Self",
+      // the proper extensions will be added
+      fileName: "self-lib",
+    },
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
