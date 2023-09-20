@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@types/node':
+    specifier: ^20.6.3
+    version: 20.6.3
+
 devDependencies:
   '@sveltejs/vite-plugin-svelte':
     specifier: ^2.4.2
@@ -25,7 +30,7 @@ devDependencies:
     version: 5.0.2
   vite:
     specifier: ^4.4.5
-    version: 4.4.5
+    version: 4.4.5(@types/node@20.6.3)
 
 packages:
 
@@ -297,7 +302,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.4.2(svelte@4.0.5)(vite@4.4.5)
       debug: 4.3.4
       svelte: 4.0.5
-      vite: 4.4.5
+      vite: 4.4.5(@types/node@20.6.3)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -316,7 +321,7 @@ packages:
       magic-string: 0.30.3
       svelte: 4.0.5
       svelte-hmr: 0.15.3(svelte@4.0.5)
-      vite: 4.4.5
+      vite: 4.4.5(@types/node@20.6.3)
       vitefu: 0.2.4(vite@4.4.5)
     transitivePeerDependencies:
       - supports-color
@@ -329,6 +334,9 @@ packages:
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
     dev: true
+
+  /@types/node@20.6.3:
+    resolution: {integrity: sha512-HksnYH4Ljr4VQgEy2lTStbCKv/P590tmPe5HqOnv9Gprffgv5WXAY+Y5Gqniu0GGqeTCUdBnzC3QSrzPkBkAMA==}
 
   /@types/pug@2.0.6:
     resolution: {integrity: sha512-SnHmG9wN1UVmagJOnyo/qkk0Z7gejYxOYYmaAwr5u2yFYfsupN3sg10kyzN8Hep/2zbHxCnsumxOoRIRMBwKCg==}
@@ -934,7 +942,7 @@ packages:
     hasBin: true
     dev: true
 
-  /vite@4.4.5:
+  /vite@4.4.5(@types/node@20.6.3):
     resolution: {integrity: sha512-4m5kEtAWHYr0O1Fu7rZp64CfO1PsRGZlD3TAB32UmQlpd7qg15VF7ROqGN5CyqN7HFuwr7ICNM2+fDWRqFEKaA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -962,6 +970,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.6.3
       esbuild: 0.18.20
       postcss: 8.4.30
       rollup: 3.29.2
@@ -977,7 +986,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.4.5
+      vite: 4.4.5(@types/node@20.6.3)
     dev: true
 
   /wrappy@1.0.2:
