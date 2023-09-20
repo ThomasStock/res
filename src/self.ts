@@ -1,5 +1,5 @@
-import Counter from "./lib/Counter.svelte";
+import Widget from "./lib/Widget.svelte";
 
-new Counter({
+new Widget({
   target: document.body,
 });

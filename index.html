@@ -1,8 +1,14 @@
 <html>
   <head>
     <title>My Demo Resto</title>
+    <style>
+      aside {
+        background-color: green !important;
+      }
+    </style>
   </head>
   <body>
+    <script type="module" src="/src/self.ts" defer></script>
     <h1>Welcome to my demo resto</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor imperdiet ipsum, placerat egestas magna egestas sit amet. Fusce
@@ -11,14 +17,15 @@
       faucibus. Donec pharetra nisi sed augue porttitor vestibulum. Suspendisse potenti. Nunc vulputate efficitur tincidunt. Vivamus
       bibendum diam vel quam porta tempus. Nullam tristique dui quis risus aliquam mattis.
     </p>
-    <my-counter name="Demo Resto"></my-counter>
     <h2>Vivamus scelerisque placerat placerat.</h2>
-    <p>
-      Donec fringilla elementum aliquet. Fusce porttitor nibh dolor, lobortis pretium velit congue sit amet. Pellentesque habitant morbi
-      tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis lacus sit amet ipsum aliquet imperdiet. Pellentesque
-      habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sed porttitor felis. Sed aliquet lacus nec
-      eros dignissim tristique. Sed imperdiet a diam sollicitudin convallis. Nunc vitae venenatis lectus.
-    </p>
+    <aside>
+      <p>
+        Donec fringilla elementum aliquet. Fusce porttitor nibh dolor, lobortis pretium velit congue sit amet. Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis lacus sit amet ipsum aliquet imperdiet. Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sed porttitor felis. Sed aliquet lacus
+        nec eros dignissim tristique. Sed imperdiet a diam sollicitudin convallis. Nunc vitae venenatis lectus.
+      </p>
+    </aside>
     <p>
       Pellentesque vitae nibh magna. Etiam tempus urna ante, ut convallis sapien tincidunt id. Ut eleifend felis nec mauris tempus iaculis.
       Duis sem ante, gravida non eros vitae, tincidunt gravida est. Maecenas dignissim purus sem, vitae pellentesque lacus tristique ac.
@@ -38,6 +45,5 @@
       magna purus, eleifend sit amet nisi quis, finibus egestas tellus. Donec congue pretium eros. Mauris vel turpis eget sem ornare dictum
       eu at lorem. Maecenas tristique sed eros ac feugiat. In hac habitasse platea dictumst. Donec eget rutrum ligula, ut ullamcorper est.
     </p>
-    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
