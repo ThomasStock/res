@@ -2,7 +2,21 @@
 <svelte:options tag="my-counter" />
 
 <script lang="ts">
-  import Counter from "./Counter.svelte";
+  import ReserveButton from "./ReserveButton.svelte";
+
+  export let name: string;
+
+  let open = false;
 </script>
 
-<Counter />
+{#if open}
+  <div>I am open: {name}</div>
+{:else}
+  <ReserveButton on:click={() => (open = true)} />
+{/if}
+
+<style>
+  div {
+    background-color: red;
+  }
+</style>
