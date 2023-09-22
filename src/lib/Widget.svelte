@@ -1,5 +1,5 @@
 <!--Add this line to your web component-->
-<svelte:options tag="my-counter" />
+<svelte:options customElement="my-counter" />
 
 <script lang="ts">
   import ReserveButton from "./ReserveButton.svelte";
